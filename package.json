@@ -1,10 +1,11 @@
 {
     "name": "uuid-generator",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "A simple microservice that generates and returns uuids",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
+        "package": "zip -r uuid-generator-release-${VERSION}.zip app index.js package.json && mv ./uuid-generator-release-${VERSION}.zip ../releases",
         "start": "node index.js"
     },
     "keywords": [
